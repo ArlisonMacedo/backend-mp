@@ -37,7 +37,7 @@ app.get('/ambient_pad/:id', async (req, res) => {
 
     const ambient_padSerialie = {
         ...ambient_pad,
-        pad_url: `https:mpadslive.com/uploads/ambient_pad/${ambient_pad.link}`
+        pad_url: `https://mpadslive.com/uploads/ambient_pad/${ambient_pad.link}`
     }
 
     return res.json(ambient_padSerialie)
