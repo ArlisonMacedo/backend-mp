@@ -11,5 +11,9 @@
       "src": "(.*)",
       "dest": "src/index.ts"
     }
-  ]
+  ],
+  "backend-mp": {
+    "memory": 3008,
+    "maxDuration": 30
+  }
 }
