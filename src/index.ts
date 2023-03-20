@@ -37,7 +37,7 @@ app.get('/ambient_pad/:id', async (req, res) => {
 
     const ambient_padSerialie = {
         ...ambient_pad,
-        pad_url: `http://localhost/uploads/ambient_pad/${ambient_pad.link}`
+        pad_url: `https://mpadslive.com/uploads/ambient_pad/${ambient_pad.link}`
     }
 
     return res.json(ambient_padSerialie)
@@ -57,7 +57,7 @@ app.get('/agudo_pad/:id', async (req, res) => {
 
     const agudo_padSerialize = {
         ...agudo_pad,
-        pad_url: `http://localhost:3000/uploads/agudo_pad/${agudo_pad.link}`
+        pad_url: `https://mpadslive.com/uploads/agudo_pad/${agudo_pad.link}`
     }
 
     return res.json(agudo_padSerialize)
@@ -77,15 +77,15 @@ app.get('/guitar_pad/:id', async (req, res) => {
 
     const guitar_padSerialize = {
         ...guitar_pad,
-        pad_url: `http://localhost:3000/uploads/guitar_pad/${guitar_pad.link}`
+        pad_url: `https://mpadslive.com/uploads/guitar_pad/${guitar_pad.link}`
     }
 
     return res.json(guitar_padSerialize)
 })
 
-app.use('/uploads/ambient_pad', express.static(path.join(__dirname, '..', 'uploads', 'AMBIENT_PAD')))
-app.use('/uploads/agudo_pad', express.static(path.join(__dirname, '..', 'uploads', 'AGUDO_PAD')))
-app.use('/uploads/guitar_pad', express.static(path.join(__dirname, '..', 'uploads', 'GUITAR_PAD')))
+// app.use('/uploads/ambient_pad', express.static(path.join(__dirname, '..', 'uploads', 'AMBIENT_PAD')))
+// app.use('/uploads/agudo_pad', express.static(path.join(__dirname, '..', 'uploads', 'AGUDO_PAD')))
+// app.use('/uploads/guitar_pad', express.static(path.join(__dirname, '..', 'uploads', 'GUITAR_PAD')))
 
 app.listen(3000, () => console.log('HTTP IS RUNNING'))
 
