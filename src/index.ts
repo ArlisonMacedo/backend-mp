@@ -6,7 +6,6 @@ import { AmbientPad } from './entity/AmbientPad'
 import { AgudoPad } from './entity/AgudoPad'
 import { GuitarPad } from './entity/GuitarPad'
 
-import path from 'path'
 
 const app = express()
 app.use(express.json())
@@ -87,7 +86,7 @@ app.get('/guitar_pad/:id', async (req, res) => {
 // app.use('/uploads/agudo_pad', express.static(path.join(__dirname, '..', 'uploads', 'AGUDO_PAD')))
 // app.use('/uploads/guitar_pad', express.static(path.join(__dirname, '..', 'uploads', 'GUITAR_PAD')))
 
-app.listen(3000, () => console.log('HTTP IS RUNNING'))
+app.listen(21155, () => console.log('HTTP IS RUNNING'))
 
 
 
